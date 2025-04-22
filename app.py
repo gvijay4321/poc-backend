@@ -4,7 +4,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-@app.route('https://poc-backend-yibs.onrender.com/api/data', methods=['GET'])
+@app.route('/api/data', methods=['GET'])
 def get_data():
     return jsonify({"message": "Hello from the backend update!"})
 
